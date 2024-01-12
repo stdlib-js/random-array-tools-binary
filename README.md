@@ -35,30 +35,38 @@ limitations under the License.
 
 > Constructor for creating arrays filled with pseudorandom values drawn from a binary PRNG.
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/random-array-tools-binary
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
+To use in Observable,
+
 ```javascript
-var Random = require( '@stdlib/random-array-tools-binary' );
+Random = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-tools-binary@umd/browser.js' )
+```
+
+To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
+
+```javascript
+var Random = require( 'path/to/vendor/umd/random-array-tools-binary/index.js' )
+```
+
+To include the bundle in a webpage,
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-array-tools-binary@umd/browser.js"></script>
+```
+
+If no recognized module system is present, access bundle contents via the global scope:
+
+```html
+<script type="text/javascript">
+(function () {
+    window.Random;
+})();
+</script>
 ```
 
 #### Random( prng, dtypes, dtype )
@@ -168,10 +176,15 @@ The method has the following parameters:
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var arcsine = require( '@stdlib/random-base-arcsine' );
-var dtypes = require( '@stdlib/array-dtypes' );
-var Random = require( '@stdlib/random-array-tools-binary' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-arcsine@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-dtypes@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-array-tools-binary@umd/browser.js"></script>
+<script type="text/javascript">
+(function () {
 
 var dt = dtypes( 'real_floating_point_and_generic' );
 var random = new Random( arcsine, dt, 'float64' );
@@ -188,6 +201,11 @@ x = random.generate( 10, 2.0, 5.0, {
     'dtype': 'generic'
 });
 // returns [...]
+
+})();
+</script>
+</body>
+</html>
 ```
 
 </section>
