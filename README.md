@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import Random from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-tools-binary@deno/mod.js';
+import Random from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-tools-binary@v0.2.2-deno/mod.js';
 ```
 
 #### Random( prng, dtypes, dtype )
@@ -155,7 +155,7 @@ The method has the following parameters:
 ```javascript
 import arcsine from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-arcsine@deno/mod.js';
 import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-dtypes@deno/mod.js';
-import Random from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-tools-binary@deno/mod.js';
+import Random from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-tools-binary@v0.2.2-deno/mod.js';
 
 var dt = dtypes( 'real_floating_point_and_generic' );
 var random = new Random( arcsine, dt, 'float64' );
