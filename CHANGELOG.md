@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-08-01)
+## Unreleased (2025-02-24)
 
 <section class="commits">
 
@@ -12,7 +12,7 @@
 
 <details>
 
--   [`22c4d29`](https://github.com/stdlib-js/stdlib/commit/22c4d29898e2b5bb4cb071a6b7f62536027eaf28) - **docs:** remove blank line _(by Athan Reines)_
+-   [`08c640b`](https://github.com/stdlib-js/stdlib/commit/08c640bed04914d60a99a6da842e08cb57a0e4b8) - **test:** fix type bug _(by Athan Reines)_
 
 </details>
 
@@ -60,7 +60,31 @@ No changes reported for this release.
 
 ## 0.2.0 (2024-02-15)
 
-No changes reported for this release.
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`29add29`](https://github.com/stdlib-js/stdlib/commit/29add29d5f1d5dd386e3b79d71772790c4be38cc) - **docs:** fix parameter descriptions and fix tests _(by Athan Reines)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 1 person contributed to this release. Thank you to this contributor:
+
+-   Athan Reines
+
+</section>
+
+<!-- /.contributors -->
 
 </section>
 
@@ -70,7 +94,41 @@ No changes reported for this release.
 
 ## 0.1.0 (2024-01-08)
 
-No changes reported for this release.
+<section class="features">
+
+### Features
+
+-   [`84cf136`](https://github.com/stdlib-js/stdlib/commit/84cf13686d9559067a6c2d84ba10fb42a4b206d8) - add `random/array/tools/binary`
+
+</section>
+
+<!-- /.features -->
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`84cf136`](https://github.com/stdlib-js/stdlib/commit/84cf13686d9559067a6c2d84ba10fb42a4b206d8) - **feat:** add `random/array/tools/binary` _(by Athan Reines)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 1 person contributed to this release. Thank you to this contributor:
+
+-   Athan Reines
+
+</section>
+
+<!-- /.contributors -->
 
 </section>
 
